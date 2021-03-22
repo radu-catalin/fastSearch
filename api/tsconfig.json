@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "../",
+    "sourceMap": true,
+    "target": "es2018",
+    "inlineSources": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/ioc": ["./src/app/ioc"],
+      "@app/ioc/*": ["./src/app/ioc/*"],
+      "@app/graphql/*": ["./src/app/graphql/*"],
+      "@app/config": ["./src/app/config"]
+    },
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "lib": ["dom", "es2018"]
+  },
+  "include": ["./src", "index.ts"],
+  "exclude": ["node_modules"]
+}
